@@ -1,7 +1,14 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import About from '../components/About/About'
+import InstagramGallery from '../components/InstagramGallery/InstagramGallery'
+import Navbar from '../components/NavBar/Navbar'
+
 
 export default function index() {
-  return <h1>This is home</h1>
+  return (
+    <div>
+  <Navbar />
+  <InstagramGallery />
+  <About />
+  </div>
+  )
 }
