@@ -1,3 +1,27 @@
-.navBarC {
-    background-color: blue;
+.navBarContainer {
+    background-color: white;
+    border: 1px solid black;
+    height: 6vh;
+    width: 98.5vw;
+   display: flex;
+   justify-content: space-between;
 } 
+
+.linkFlex {
+    background-color: white;
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+
+.linkFlex li {
+    list-style-type: none;
+}
+
+.linkFlex li a {
+    color: black;
+    text-decoration: none;
+}
+
