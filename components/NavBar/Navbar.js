@@ -7,12 +7,11 @@ import logoName from '../../public/Jmcrete-images/logoName.jpg'
 export default function Navbar() {
     return (
         <nav className={styles.navBarContainer}> 
-        <Image src={logoName} 
-            alt="Logo name"
-            width="200px"
-            height="20px"
-
-         />
+        <Image className={styles.logoContainer} 
+        src={logoName} alt="Logo name" 
+        height="200px" 
+        width='200px' />
+        
 
         <ul className={styles.linkFlex}> 
         <li>
