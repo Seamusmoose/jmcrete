@@ -1,14 +1,14 @@
-import About from '../components/About/About'
+import About from './about'
 import InstagramGallery from '../components/InstagramGallery/InstagramGallery'
-import Navbar from '../components/NavBar/Navbar'
+
 
 
 export default function index() {
   return (
     <div>
-  <Navbar />
+  {/* <About /> */}
   <InstagramGallery />
-  <About />
+  
   </div>
   )
 }

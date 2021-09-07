@@ -1,7 +1,13 @@
-export default function Layout() {
+import Navbar from "../NavBar/Navbar"
+import Footer from "../Footer/Footer"
+
+export default function Layout({children}) {
     return (
         <div>
-            <h1>Layout?</h1>
+             <Navbar />
+             {children}
+             {/* <Footer /> */}
         </div>
     )
 };
+ 
