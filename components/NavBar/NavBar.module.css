@@ -1,7 +1,6 @@
 .navBarContainer {
     position: fixed;
     background-color: black;
-    /* border-bottom: 1px solid black; */
     max-height: 10vh;
     min-height: 50px;
     width: 100vw;
@@ -10,25 +9,31 @@
 } 
 
 .linkFlex {
+    /* padding: 1%; */
+    margin: 1%;
     background-color: black;
-    width: 25vw;
+    width: min(300px, 60%);
     display: flex;
     justify-content: space-evenly;
     align-items: center;  
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: inherit;
+
 }
 
 
 .linkFlex li {
     background-color: black;
     list-style-type: none;
-    display: flex;
+    
 } 
 
 .linkFlex li a {
+    font-size: 1.1em;
     color: white;
     text-decoration: none;
-    display: flex;
-
+    
 }
 
 .logoContainer {
