@@ -1,17 +1,20 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './NavBar.module.css'
-import logoName from '../../public/Jmcrete-images/logoName.jpg'
+import logoName from '../../public/Jmcrete-images/white_logo_dark_background.jpg'
 
 
 export default function Navbar() {
     return (
         <nav className={styles.navBarContainer}> 
+
+        
         <Image className={styles.logoContainer} 
         src={logoName} alt="Logo name" 
-        height="200px" 
+        height="60px"
         width='200px' />
-        
+    
+       
 
         <ul className={styles.linkFlex}> 
         <li>
@@ -26,8 +29,8 @@ export default function Navbar() {
       </li>
 
       <li>
-        <Link href="/about">
-          <a>About Us</a>
+        <Link href="/contact">
+          <a>Contact</a>
         </Link>
       </li>
         </ul>

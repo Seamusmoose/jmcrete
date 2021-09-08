@@ -1,9 +1,9 @@
 .logoContainer {
- background-color: white;
- display: block;
- /* display: flex;  */
- /* justify-content: center;  */
- /* align-items: center; */
+padding-bottom: 10%;
+ background-color: black;
+ display: flex; 
+ justify-content: center;
+ align-items: center;
 height: 100vh; 
 
 }

@@ -1,0 +1,19 @@
+.introText {
+    background-color: #0d131c;
+    color: white;
+    height: 80vh;
+    margin-top: 0%;
+    
+    
+}
+
+.spacer {
+    margin: 0%;
+    background-image: url('./layered-top.svg');
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
