@@ -1,15 +1,11 @@
 .introText {
-    background-color: #0d131c;
+    background-color: #596b7a;
     color: white;
-    height: 80vh;
-    margin-top: 0%;
-    
-    
+    height: 80vh;   
 }
 
 .spacer {
-    margin: 0%;
-    background-image: url('./layered-top.svg');
+    background-image: url('./layered-waves-haikei.svg');
     aspect-ratio: 960/300;
     width: 100%;
     background-repeat: no-repeat;
@@ -17,3 +13,48 @@
     background-size: cover;
 }
 
+.contentGrid {
+    height: 40vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "contentHead contentHead contentHead"
+    "content1 content2 content2"
+    "content1 content2 content2"
+    "content1 content3 content3"
+    "content1 content4 content4"
+    "content1 content5 content5"
+    
+    ;
+    }
+    
+
+.contentHead {
+    margin: 0%;
+    padding: 0%;
+    grid-area: contentHead;
+}
+
+
+.content1 {
+background-color: thistle;
+grid-area: content1;
+}
+
+.content2 {
+background-color: tomato;
+grid-area: content2;
+}
+.content3 {
+background-color: aliceblue; 
+grid-area: content3;
+}
+.content4 {
+background-color: aqua;
+grid-area: content4;
+}
+.content5 {
+ background-color: blueviolet;  
+ grid-area: content5; 
+}
