@@ -2,7 +2,7 @@ import InstagramFeed from "../components/InstagramFeed/InstagramFeed";
 import MainLogo from "../components/MainLogo/MainLogo";
 import ShortIntro from "../components/shortIntro/ShortIntro";
 
-export default function index(iPosts) {
+export default function index({ iPosts }) {
   return (
     <div>
       <MainLogo />
