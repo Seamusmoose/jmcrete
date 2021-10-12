@@ -3,21 +3,26 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function InstagramFeed({ iPosts }) {
-  //console.log(iPosts, "here are the iposts");
+  //console.log(iPosts.data.media_type, "here are the iposts");
 
   return (
     <div>
-      <h1>here are insta posts</h1>
-      <ul>
+      <ul className={styles.wrapper}>
         {iPosts.data.map((post) => (
           <div key={post.id}>
-            <li>{post.timestamp}</li>
             <img
               src={post.media_url}
-              alt="InstaImage"
+              alt="See Instagram for video"
               height="300px"
-              width="305px"
+              width="350px"
             />
+            {/* <video
+                    width='100%'
+                    height='auto' 
+                    src={post.media_url} 
+                    type="video/mp4" 
+                    controls playsinline>
+                </video> */}
           </div>
         ))}
       </ul>
