@@ -6,30 +6,25 @@ export default function shortIntro() {
   return (
     <div>
       <div className={styles.spacer}> </div>
+
       <div id="aboutUs" className={styles.aboutUs}>
+        <h1 className={styles.contentHead}>JmCrete Solutions</h1>
 
-        
-          <h1 className={styles.contentHead}>This is who we are</h1>
-          <div className={styles.content1}>
-            Welcome to JMCrete Solutions. We are a concreting business located
-            in Indooroopilly servicing the greater Brisbane area. We cover all
-            areas from North Brisbane to Gold Coast, from East Brisbane to
-            Ipswich and all inbetween. We specialise in all aspects of
-            concreting and can help you with whatever job you need. Including
-            slabs, patios, footpaths, driveways, shed slabs, steelfixing,
-            formwork, commercial slabs and more. We provide professional quotes
-            and we are sure to leave you satisfied with the job. Feel free to
-            contact us anytime for a quote and we look forward to hearing from
-            you
-          </div>
+        <div className={styles.contentContainer}>
+          <p>Welcome to JMCrete Solutions. We are a concreting business located in
+          Indooroopilly servicing the greater Brisbane area. We cover all areas
+          from North Brisbane to Gold Coast, from East Brisbane to Ipswich and
+          all inbetween. We specialise in all aspects of concreting and can help
+          you with whatever job you need. Including slabs, patios, footpaths,
+          driveways, shed slabs, steelfixing, formwork, commercial slabs and
+          more. We provide professional quotes and we are sure to leave you
+          satisfied with the job. Feel free to contact us anytime for a quote
+          and we look forward to hearing from you</p>
 
-          <Image
-            src={profilePic}
-            className={styles.content2}
-            height={500}
-            width={200}
-          />
-        
+          <p>test paragraph</p>
+        </div>
+
+        <Image src={profilePic} className={styles.contentImage} />
       </div>
     </div>
   );

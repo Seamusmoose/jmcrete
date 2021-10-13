@@ -1,4 +1,3 @@
-
 .spacer {
   background-image: url("./layered-waves-haikei.svg");
   aspect-ratio: 960/300;
@@ -9,28 +8,42 @@
 }
 
 .aboutUs {
-    background-color: #596b7a;
-    color: white;
-    height: 80vh;
-    display: grid;
-    grid-template-columns:(1fr, 1fr);
-  }
-  
-
+  background-color: var(--greyPrimary);
+    border: 0;
+  color: white;
+  height: 100vh;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: (2, 1fr);
+  grid-template-areas:
+    "contentHead contentHead"
+    "contentImage content1";
+    
+}
 
 .contentHead {
-  margin: 0%;
-  padding: 0%;
+  color: var(--yellowPrimary);
   grid-area: contentHead;
 }
 
-.content1 {
-  background-color: thistle;
+.contentContainer {
+padding: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
+
+
+  background-color: var(--mediumDark);
+  color: var(--yellowPrimary);
   grid-area: content1;
 }
 
-.content2 {
-  background-color: tomato;
-  grid-area: content2;
-}
 
+.contentImage {
+  background-color: tomato;
+  grid-area: contentImage;
+  height: 200px;
+  width: 100px;
+}
